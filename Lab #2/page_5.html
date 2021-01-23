@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style_5.css">
+        <title>Fifth task</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <h1>Циклы в C++</h1>
+                    <div class="first_part">
+                        <i><b>Цикл</b></i> — многократное прохождение по одному и тому же коду программы. Циклы необходимы программисту для многократного выполнения одного и того же кода, пока истинно какое-то условие. Если условие всегда истинно, то такой цикл называется бесконечным, у такого цикла нет точки выхода.
+                        <br><br> В языке программирования С++ существуют такие циклы:
+                        <ul class="list">
+                            <li>цикл <code>while</code>
+                            <li>цикл <code>do  while</code></li>
+                            <li>цикл <code>for</code></li></li>
+                        </ul>
+                    </div>
+                    <h1>Цикл while в C++</h1>
+                    <div class="second_part">
+                        Оператор цикла <code>while</code> или цикл <code>while</code> - цикл, повторяющий одно и то же действие, пока условие продолжения цикла <code>while</code> остаётся истинным.
+                    </div><br>
+                    <div class="top_line"></div><br>
+                        <code class="while_cycle">
+                            // форма записи цикла while <br>
+                            while (/*условие продолжения цикла while*/) <br>
+                            { <br>
+                            /*блок операторов*/; <br>
+                            /*управление условием*/; <br>
+                            } <br>
+                        </code><br>
+                    <div class="bottom_line"></div><br>
+
+                    <div class="third_part">
+                        Условие продолжения цикла должно быть истинно <code>true</code>, как только условие стало ложным, выполняется выход из цикла. Также как и в условных операторах выбора, фигурные скобочки могут опускаться в том случае, если тело цикла — это один оператор. Но как правило в цикле выполняется несколько операторов, так как кроме выполнения полезного действия необходимо делать условие цикла <code>while</code> ложным, иначе цикл будет бесконечным, а это, в свою очередь, приведет к зависанию программы.
+                    </div>
+                   <dl>
+                       <dt><div class="fourth_part">
+                                Оператор цикла <code>while</code> или цикл <code>while</code> - цикл, с предусловием, так как сначала проверяется условие продолжения цикла, а затем выполняется тело цикла.
+                           </div>
+                           <dd>
+                                <code>while(0)</code>  или <code>while(false)</code>  не выполнится ни разу
+                           </dd>
+                           <dd>
+                                <code>while(1)</code>  или <code>while(true)</code>  бесконечный цикл
+                           </dd>
+                       </dt>
+                   </dl>
+
+                    <b><u>Задача</u></b>   <code class="condition">Вывести числа от 1 до n</code> <br><br>
+
+                    <b><i>Решение</i></b>
+                    <code class="program">
+<pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+int main()
+{
+    int n;
+    cout &lt;&lt; ”n =”;
+    cin &gt;&gt; n;
+    int i = 1;
+    while(i &lt;= n)
+    {
+        cout &lt;&lt; i &lt;&lt; " ";
+        i++;
+    }
+}
+
+<b>Ввод</b> 10
+<b>Вывод</b> 1 2 3 4 5 6 7 8 9 10
+</pre>
+                    </code>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

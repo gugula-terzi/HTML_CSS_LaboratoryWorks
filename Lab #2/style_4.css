@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Century Gothic";
+    background:  #2d394d;
+}
+
+.title {
+    text-align: center;
+    font-size: 18px;
+}
+
+.box {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: #2d394d;
+    color: rgba(255, 255, 255, 0.5);
+    box-shadow:  20px 20px 50px #242e3e,
+                -20px -20px 50px #36445c;
+}
+

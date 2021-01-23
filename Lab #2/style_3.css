@@ -1,0 +1,112 @@
+body {
+    background:rgba(124, 155, 255, 0.8);
+    padding: 0;
+    margin: 0;
+}
+.wrapper {
+    height: 350px;
+    width: 500px;
+    margin: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    perspective: 800px;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+
+.card:hover {
+    transform: rotateY(-180deg);
+}
+
+.front {
+    z-index: 0;
+    background: #252628;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+
+.title {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    letter-spacing: 4px;
+}
+
+.image {
+    margin-bottom: 20px;
+    width: 128px;
+    height: 128px;
+    filter: drop-shadow(5px 5px 5px rgba(102, 240, 187, 0.5));
+}
+
+.back {
+    z-index: 2;
+    font-family: "Century Gothic";
+    color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.container {
+    background: #252628;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border-color: white;
+    border-width: 5px;
+}
+
+.background {
+    z-index: 1;
+    position: absolute;
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.1)
+    );
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    filter: blur(100px);
+    left: 50%;
+    transform: translate(-50%, 25%);
+}
+
+.text {
+    z-index: 100;
+}
+
+.help {
+    margin-top: 80px;
+    text-align: center;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: 34px;
+    color:rgba(124, 155, 255, 0.8);
+    text-shadow: -1px -1px rgba(58, 104, 253, 0.8),
+                  0 1px 0 rgba(179, 196, 255, 0.8);
+}
