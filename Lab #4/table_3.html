@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="table.png">
+    <title>table_3</title>
+</head>
+<body>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        table.table {
+            margin: 50px auto;
+            border-collapse: collapse;
+            border: 1px solid black;
+            font-family: "Calibri";
+        }
+        
+        table.table td, table.table th {
+            padding: 10px;
+            vertical-align: top;
+            border: 1px solid;
+        }
+
+        .FIO {
+            vertical-align: top;
+            text-align: center;
+        }
+        
+        .table.header {
+            vertical-align: top;
+            text-align: center;
+        }
+
+        .post {
+            vertical-align: top;
+            text-align: center;
+        }
+
+        .work_exp {
+            text-align: center;
+        }
+        .links {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            font: 20px bold;
+        }
+        .links a {
+            text-decoration: none;
+            margin: 0 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: black;
+        }
+        
+        </style>
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="header" colspan="6"><i>ЭТО "ШАПКА" ТАБЛИЦЫ:</i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2"><b>№</b></td>
+                    <td class="FIO" colspan="3"><b>ФИО</b></td>
+                    <td class="post" rowspan="2"><b>Должность</b></td>
+                    <td class="work_exp" rowspan="2"><b>Стаж</b></td>
+                </tr>
+                <tr>
+                    <td><b>Фамилия</b></td>
+                    <td><b>Имя</b></td>
+                    <td><b>Отчество</b></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Воробьёв</td>
+                    <td>Яков</td>
+                    <td>Яковлевич</td>
+                    <td>Директор</td>
+                    <td>с 1999 года</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Антонов</td>
+                    <td>Иван</td>
+                    <td>Семёнович</td>
+                    <td>Бухгалтер</td>
+                    <td>с 2010 года</td>
+                </tr>
+            </tbody>
+        </table>    
+        <div class="links"><a href="table_2.html">Previous table</a>|<a href="table_4.html">Next table</a></div>
+    </body>
+</html>

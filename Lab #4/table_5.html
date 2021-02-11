@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="table.png">
+        <title>table_5</title>
+    </head>
+    <body>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: "Calibri";
+            font-size: 20px;
+        }
+        table.table {
+            margin: 50px 0;
+            border-collapse: collapse;
+            border: 1px solid;
+        }
+        
+        table.table td, table.table th {
+            border: 1px solid;
+            padding: 5px;
+            
+        }
+
+        table.table tr {
+            text-align: center;
+        }
+        
+        table.table td div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .links {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            font: 20px bold;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        .links a {
+            text-decoration: none;
+            margin: 0 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+
+    <table class="table">
+      <tbody>
+        <tr class="header">
+            <td bgcolor="lightgray" colspan="2"><b>Домашние животные</b></td>
+            <td bgcolor="lightgray" colspan="2"><b>Дикие животные</b></td>
+            <td bgcolor="lightblue" rowspan="2"></td>
+        </tr>
+        <tr>
+          <td><b>Могут летать</b></td>
+          <td><b>Не могут летать</b></td>
+          <td bgcolor="lightblue"><b>Могут летать</b></td>
+          <td bgcolor="lightblue"><b>Не могут летать</b></td>
+        </tr>
+        <tr>
+          <td><div><img src="https://clipart-best.com/img/chicken/chicken-clip-art-16.png" alt="курица"> Курица</div></td>
+          <td><div><img src="https://pngimg.com/uploads/rabbit/rabbit_PNG3799.png" alt="кролик"> Кролик</div></td>
+          <td bgcolor="lightblue"><div><img src="https://pngimg.com/uploads/raven/raven_PNG61.png" alt="ворона">Ворона</div></td>
+          <td bgcolor="lightblue"><div><img src="https://clipart-best.com/img/wolf/wolf-clip-art-27.png" alt="волк">Волк</div></td>
+          <td bgcolor="lightblue" rowspan="2"> Встречаются на территории нашей страны.</td>
+        </tr>
+        <tr>
+          <td><div><img src="https://clipart-best.com/img/goose/goose-clip-art-37.png" alt="гусь">Гусь</div></td>
+          <td><div><img src="https://kostroma.melasty.ru.com/wa-data/public/site/category_images/goat-png-png-1238x1022-goat-with-no-background-1238.png" alt="коза">Коза</div></td>
+          <td bgcolor="lightblue"><div><img src="https://pngimg.com/uploads/owl/owl_PNG31.png" alt="сова">Сова</div></td>
+          <td bgcolor="lightblue"><div><img src="https://png.rinvik.ru/files/Narisovannaya-lisa-sidit.png" alt="лиса">Лиса</div></td>
+        </tr>
+        <tr>
+          <td><div><img src="https://www.seekpng.com/png/full/9-97439_duck-png.png" alt="утка">Утка</div></td>
+          <td><div><img src="https://usadbalive.ru/wa-data/public/site/photo/horse.png" alt="конь">Конь</div></td>
+          <td bgcolor="lightblue"><div><img src="https://clipart-best.com/img/flamingo/flamingo-clip-art-1.png" alt="фламинго">Фламинго</div></td>
+          <td bgcolor="lightblue"><div><img src="https://i.ya-webdesign.com/images/elephant-png-6.png" alt="слон">Слон</div></td>
+          <td bgcolor="lightblue" rowspan="2">Не встречаются на территории нашей страны.</td>
+        </tr>
+        <tr>
+          <td><div><img src="https://www.apnikheti.com/upload/liveStock/4268idea99nandana.png" alt="перепёлка">Перепёлка</div></td>
+          <td><div><img src="http://pngimg.com/uploads/donkey/donkey_PNG4.png" alt="осёл">Осёл</div></td>
+          <td bgcolor="lightblue"><div><img src="https://pngimg.com/uploads/hummingbird/hummingbird_PNG89.png" alt="колибри">Колибри</div></td>
+          <td bgcolor="lightblue"><div><img src="https://ds04.infourok.ru/uploads/ex/060d/00179934-bf28bd20/19/hello_html_6f5b4b1.png" alt="лев">Лев</div></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="links"><a href="table_4.html">Previous table</a></div>
+    </body>
+</html>

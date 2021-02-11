@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="table.png">
+        <title>table_4</title>
+    </head>
+    <body>
+        
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-family: "Calibri";
+        }
+        .title {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+        }
+        table.table {
+            margin: 50px auto;
+            font-size: 20px;
+            border: 1px double black;
+        }
+        
+        table.table td, table.table th {
+            border: 1px double;
+        }
+
+        .row3_nested {
+            padding-top: 30px;
+            text-align: center;
+            vertical-align: center;
+        }
+
+        .row2_nested {
+            margin: 20px 0;
+            text-align: center;
+            vertical-align: center;
+        }
+
+        .table_col1 {
+            margin-top: 20px;
+        }
+
+        .links {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            font: 20px bold;
+        }
+
+        .links a {
+            text-decoration: none;
+            margin: 0 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: black;
+        }
+
+    </style>
+    <div class="content">
+        <div class="title"><h1>Nested Tables</h1></div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Header column 1</th>
+          <th>Header column 2</th>
+          <th>Header column 3</th>
+          <th>Header column 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Row 2 - Item 1</td>
+          <td>Row 2 - Item 1</td>
+          <td class="row2_nested" rowspan="2"><b>Row 2: Nested Table 1</b>
+              <table class="table_col1" border="1px double">
+                  <tr>
+                      <td><b>Row 1 Header</b></td>
+                      <td>item</td>
+                  </tr>
+                  <tr>
+                      <td><b>Row 2 Header</b></td>
+                      <td>item</td>
+                  </tr>
+                  <tr>
+                    <td><b>Row 2 Header</b></td>
+                    <td>item</td>
+                  </tr>
+              </table>
+          </td>
+          <td>Row 2 - Item 4 <br> A second line</td>
+        </tr>
+        <tr>
+          <td class="row3_nested"><b>Row 3: Nested Table 2</b>
+            <table class="table_col1" border="1px double">
+                <tr>
+                    <td><b>Row 1 Header</b></td>
+                    <td>item</td>
+                  </tr>
+                  <tr>
+                      <td><b>Row 2 Header</b></td>
+                      <td>item</td>
+                  </tr>
+            </table>
+          </td>
+          <td>Row 3 - Item 2</td>
+          <td rowspan="2">Row 3 - Item 3</td>
+        </tr>
+        <tr>
+          <td>Row 4 - Item 1</td>
+          <td>Row 4 - Item 2</td>
+          <td>Row 4 - Item 3</td>
+        </tr>
+        <tr>
+          <td colspan="4">Row 5 - Last row of outer table</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>    
+    <div class="links"><a href="table_3.html">Previous table</a>|<a href="table_5.html">Next table</a></div>
+    </body>
+</html>

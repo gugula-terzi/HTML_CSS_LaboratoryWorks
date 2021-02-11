@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="table.png">
+    <title>table_2</title>
+</head>
+<body>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        table.table {
+          margin: 50px auto;
+          border-collapse: collapse;
+          border: 4px double #000;
+        }
+
+        table.table td, table.table th {
+            border-width: 1px;
+            border-color: #000000;
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        num {
+            text-align: left;
+            padding: 0;
+        }
+
+        .table  .name  {
+            text-align: left;
+        }
+        .links {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            font: 20px bold;
+        }
+        .links a {
+            text-decoration: none;
+            margin: 0 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: black;
+        }
+
+        .rotate > div{
+            width: 100%;
+            transform: rotate(-90deg);
+        }
+    </style>
+    
+    <table class="table">
+      <tbody>
+        <tr>
+          <th class="rotate" rowspan="3"><div><span>№ п/п</span></div></th>
+          <td rowspan="3">Ф.И.О.студента</td>
+          <td rowspan="3">№ зач.</td>
+          <td colspan="10"><b>1 семестр</b></td>
+          <td colspan="10"><b>2 семестр</b></td>
+        </tr>
+        <tr>
+          <td colspan="5"><i>Зачёты</i></td>
+          <td colspan="5"><i>Экзамены</i></td>
+          <td colspan="5"><i>Зачёты</i></td>
+          <td colspan="5"><i>Экзамены</i></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td class="name">1</td>
+          <td class="name">Иванов</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="name">2</td>
+          <td class="name">Орлов</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="name">3</td>
+          <td class="name">Синицын</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="links"><a href="table_1.html">Previous table</a>|<a href="table_3.html">Next table</a></div>
+</body>
+</html>

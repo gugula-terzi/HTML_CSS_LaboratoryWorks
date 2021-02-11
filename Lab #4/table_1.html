@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="table.png">
+        <title>table_1</title>
+    </head>
+    <body>
+        <style type="text/css">
+            .table  {
+                border-collapse: collapse;
+                width: 50%;
+                margin: 50px auto;
+                font-size: 20px;
+            }
+            .table td {
+                border: 1px solid black;
+                padding: 6px 20px;
+            }
+            .table th {   
+                border: 1px solid black;
+                padding:6px 20px;
+            }
+            .table .merged_row{
+                background-color: #c0c0c0;
+                text-align: center;
+                vertical-align: center;
+            }
+            .table .column{
+                font-size: 20px;
+                text-align: center;
+                vertical-align: center;
+            }
+            
+            .next {
+                margin: 50px 0;
+                font-size: 20px;
+                text-decoration: none;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: black;
+            }
+        </style>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td class="merged_row" rowspan="2">A</td>
+                    <td class="column" colspan="3">B</td>
+                    <td class="column" rowspan="2">C</td>
+                </tr>
+                <tr>
+                    <td class="column">D</td>
+                    <td class="column">E</td>
+                    <td class="column">F</td>
+                </tr>
+                <tr>
+                    <td class="merged_row">G</td>
+                    <td class="column" colspan="3">H</td>
+                    <td class="column">I</td>
+                </tr>
+            </tbody>
+        </table>
+        <a class="next" href="table_2.html">Next table</a>
+    </body>
+</html>
