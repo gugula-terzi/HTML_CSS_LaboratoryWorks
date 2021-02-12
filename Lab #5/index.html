@@ -2,8 +2,9 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="icon" href="exam.png">
         <link rel="stylesheet" href="styles/style.css">
-        <title>Frames</title>
+        <title>BAC Exams</title>
     </head>
     <style>
       *{
@@ -13,13 +14,13 @@
         border-radius: 20px;
       }
     </style>
-      <frameset rows="15%,75%, 10%" frameborder="0">
-          <frame src="top.html" name="TOP" scrolling="no" noresize>
-          <frameset cols="20%, 60%, 20%">
-            <frame src="menu.html" id="menu" name="MENU" scrolling="no" noresize>
-            <frame src="content.html" name="CONTENT" scrolling="no" noresize>
-            <frame src="ad.html" name="AD" scrolling="no" noresize>
-          </frameset>
-          <frame src="https://ance.gov.md/clasa-sesiunea-examen/clasa-12" name="BOTTOM" noresize>
+    <frameset rows="15%,70%, 15%" frameborder="0">
+      <frame src="top.html" name="TOP" scrolling="no" noresize>
+      <frameset cols="20%, 60%, 20%">
+        <frame src="menu.html" id="menu" name="MENU" scrolling="no" noresize>
+        <frame src="content.html" name="CONTENT" noresize>
+        <frame src="ad.html" name="AD" scrolling="no" noresize>
       </frameset>
+      <frame src="bottom.html" name="BOTTOM" noresize>
+    </frameset>
 </html>
