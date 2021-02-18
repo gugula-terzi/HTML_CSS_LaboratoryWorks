@@ -1,0 +1,228 @@
+@font-face {
+    font-family: "Merriweather";
+    src: url("MerriweatherSansRegular.woff");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #269BF4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#from, #passanger, .road, .container {
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#passanger {
+    position: absolute;
+    top: 25px;
+    right: 200px;
+}
+
+#from {
+    position: absolute;
+    top: 25px;
+    left: 235px;
+}
+
+.road {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 150px;
+    left: 230px;
+}
+
+.road img {
+    margin-right: 10px;
+}
+
+#fill-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    letter-spacing: 1px;
+    font-family: Helvetica;
+}
+
+#input1 {
+    background: white;
+    width: 270px;
+    height: 35px;
+    border: 0px;
+    border-radius: 5px 0 0 5px;
+    box-shadow: -3px 3px 5px 0px rgba(15, 51, 79, 0.2);
+    padding: 20px;
+    font-size: 20px;
+    font-family: Helvetica;
+    margin-right: 1px;
+}
+
+#input2, #input3, #input4 {
+    background: white;
+    width: 270px;
+    height: 35px;
+    border: 0px;
+    padding: 20px;
+    box-shadow: 0px 3px 5px 0px rgba(15, 51, 79, 0.2);
+    font-size: 20px;
+    font-family: Helvetica;
+    margin: 1px;
+}
+
+#passanger_class {
+    background: white;
+    width: 270px;
+    height: 75px;
+    border: 0px;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 3px 3px 5px 0px rgba(15, 51, 79, 0.2);
+    padding: 20px;
+    margin-left: 1px;
+    font-size: 20px;
+    font-family: Helvetica;
+}
+
+#input1:focus, 
+#input2:focus, 
+#input3:focus, 
+#input4:focus, 
+#passanger_class:focus {
+    outline: none;
+}
+
+#arrows {
+    position: relative;
+    top: 0;
+    left: 330px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0px 3px 5px 0px rgba(15, 51, 79, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#arrows img{
+    width: 20px;
+    height: 20px;
+    filter: opacity(.5) drop-shadow(0 0 0 #269BF4);
+}
+
+.container {
+    display: inline-block;
+    padding-left: 25px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+    position: absolute;
+    top: 150px;
+    right: 200px;
+}
+  
+  
+.container input { /* Hide the browser's default checkbox */
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark { /* Create a custom checkbox */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    border-radius: 3px;
+    background-color: white;
+}
+  
+.container:hover input ~ .checkmark { /* On mouse-over, add a grey background color */
+    background-color: white;
+}
+  
+.container input:checked ~ .checkmark { /* When the checkbox is checked, add a blue background */
+    background-color: white;
+}
+    
+.checkmark:after { /* Create the checkmark/indicator (hidden when not checked) */
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.container input:checked ~ .checkmark:after { /* Show the checkmark when checked */
+    display: block;
+}
+  
+.container .checkmark:after { /* Style the checkmark/indicator */
+    left: 6px;
+    top: 2px;
+    width: 3px;
+    height: 8px;
+    border: solid #269BF4;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+#find-btn {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    background: #f68200;
+    border: 0;
+    border-radius: 5px;
+    height: 80px;
+    width: 350px;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    box-shadow: 0px 2px 0px 0px rgba(171, 90, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    font-family: "Helvetica";
+    transition: 0.2s ease-in-out;
+}
+
+#find-btn:focus {
+    outline: none;
+}
+
+#find-btn:active {
+    box-shadow: 0 0 0 0;
+}
+
+#find-btn img {
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+.back img {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 2%;
+    left: 1%;
+    color: white;
+    opacity: 0.5;
+}

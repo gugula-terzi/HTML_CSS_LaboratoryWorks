@@ -2,11 +2,160 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="icon" href="calculator.png">
         <link rel="stylesheet" href="style_3.css">
-        <title>User Input Form</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Калькулятор каско</title>
     </head>
     
     <body>
-        
+        <div class="back" onclick="window.open('index.html', '_target')"><img src="circle_arrow.png" alt="back"></div>
+        <main>
+            <h1>Калькулятор каско</h1>
+            <p> Валюта полиса Рубль<br>
+                Срок страхования 1 год</p>
+            <div class="row">
+                <p class="text">Период оплаты полиса</p>
+                <select class="textarea-select">
+                    <option value="1">Единовременно</option>
+                    <option value="2">Кредит</option>
+                </select>
+            </div>
+            <p style="color: rgb(63, 170, 63); font-weight: bold;">Автомобиль</p>
+            
+            <div class="content row1">
+                <p class="text">Марка*</p>
+                <input type="text" class="textarea-car-brand" placeholder="Например. AUDI">
+
+                <p class="text">Год выпуска</p>
+                <select class="textarea-select year">
+                    <option value="1">2021</option>
+                    <option value="2">2020</option>
+                    <option value="3">2019</option>
+                    <option value="4">2018</option>
+                    <option value="5">2017</option>
+                    <option value="6">2016</option>
+                </select>
+
+                <p class="text">Страховая сумма. руб*</p>
+                <input type="text" class="textarea">
+
+                <p class="text">Противоугонное устройство</p>
+                <div class="group">
+                    <input type="text" class="textarea" placeholder="введите название, например: Starline">
+                    
+                    <form class="checkboxes">
+                        <label class="container">Механическое противоугонное устройство
+                            <input type="checkbox">
+                            <label class="checkmark"></label>
+                        </label>
+                        <label class="container">Пробег менее 1 000 км
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">ТС находится в залоге у банка
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </form>
+                </div>
+
+                <p class="text">Количество мест</p>
+                <input type="text" class="textarea count">
+
+                <p class="text">Количество ДТП <i id="mark" class="fa fa-question-circle" aria-hidden="true"></i></p>
+                <input type="text" class="textarea count">
+            </div>
+            <div class="content">
+                <p class="text">Регион преобретения полиса*</p>
+                <input type="text" class="textarea">
+
+                <p class="text">Место жительста собственника*</p>
+                <input type="text" class="textarea">
+
+                <p class="text">Территория страхования</p>
+                <form id="radiobuttons">
+                    <label class="container-radio">Россия
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark-radio"></span>
+                    </label>
+                    <label class="container-radio">Россия и зарубежные страны
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark-radio"></span>
+                    </label>
+                </form>
+            </div>
+            <p style="color: rgb(63, 170, 63); font-weight: bold;">Владелец</p>
+            <div class="content row1">
+                <p></p>
+                <form class="radiobuttons type">
+                    <label class="container-radio">Физическое лицо
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark-radio"></span>
+                    </label>
+                    <label class="container-radio">Юридическое лицо
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark-radio"></span>
+                    </label>
+                </form>
+
+                <p class="text">Лица, допущенные к управлению</p>
+                <form class="multiple-radio">
+                    <label class="container-radio">Без ограничения <i id="mark" class="fa fa-question-circle" aria-hidden="true"></i>
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark-radio"></span>
+                    </label>
+                    <label class="container-radio">Ограниченный список <i id="mark" class="fa fa-question-circle" aria-hidden="true"></i>
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark-radio"></span>
+                    </label>
+                    <label class="container-radio">Без ограничения 22+, 2+ <i id="mark" class="fa fa-question-circle" aria-hidden="true"></i>
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark-radio"></span>
+                    </label>
+                </form>
+
+                <p class="text" style="margin: 20px 0; display: flex; align-items: center;">Водитель</p>
+                <div class="box">
+                    <div class="box1">
+                        <p>Возраст <br>(полных лет)</p>
+                        <input type="text" class="textarea ride-age">
+                    </div>
+                    <div class="box2">
+                        <p>Водительский стаж</p>
+                        <input type="text" class="textarea ride-age">
+                    </div>
+                </div>
+
+                <p></p>
+                <form class="radiobuttons gender">
+                    <p class="gap">Пол водителя</p>
+                    <label class="container-radio gap">Мужской
+                        <input type="radio" name="radio">
+                        <span class="checkmark-radio"></span>
+                    </label>
+                    <label class="container-radio">Женский
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark-radio"></span>
+                    </label>
+                </form>
+
+                <p class="add">Добавить ещё одного водителя</p>
+            </div>
+            <div class="content last">
+                <p class="text">Вариант выплат страхового возмещения</p>
+                <form class="radiobuttons">
+                    <label class="container-radio bottom">Ремонт на СТОА официальных диллеров по направлению компании
+                        <input type="radio" name="radio">
+                        <span class="checkmark-radio"></span>
+                    </label>
+                    <label class="container-radio">Ремонт на СТОА, не являющихсф официальными диллерами, по направлению страховой компании
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark-radio"></span>
+                    </label>
+                </form>
+            </div>
+        </main>
+        <input id="calculatebtn" type="button" value="Рассчитать">
     </body>
 </html>

@@ -2,11 +2,40 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="icon" href="flight.png">
         <link rel="stylesheet" href="style_2.css">
-        <title>User Input Form</title>
+        <title>Найти билеты</title>
     </head>
     
     <body>
-        
+        <div class="back" onclick="window.open('index.html', '_target')"><img src="circle_arrow.png" alt="back"></div>
+        <main>
+            <span id="from">ОТКУДА</span>
+            <span id="passanger">ПАССАЖИРЫ И КЛАСС</span>
+            <form id="fill-info">
+                <div id="arrows"><img src="two-way-arrows.png" alt="arrows"></div>
+                <input id="input1" type="text" placeholder="Откуда">
+                <input id="input2" type="text" placeholder="Куда">
+                <input id="input3" type="date" placeholder="Туда">
+                <input id="input4" type="text" placeholder="Обратно">
+                <select name="passanger_class" id="passanger_class">
+                    <option value="1">1 пассажир (эконом)</option>
+                    <option value="2">2 пассажира (эконом)</option>
+                    <option value="3">3 и более пассажиров (эконом)</option>
+                    <option value="1">1 пассажир (премиум)</option>
+                    <option value="2">2 пассажира (премиум)</option>
+                    <option value="3">3 и более пассажиров (премиум)</option>
+                </select>
+            </form>
+            <span class="road"><img src="recycle-symbol.png" width="20" height="20" alt="arrow">Составить сложный маршрут</span>
+            <label class="container">Открыть Booking.com в новом окне
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <button id="find-btn">
+                Найти билеты
+                <img src="airplane.png" alt="airplane">
+            </button>
+        </main>
     </body>
 </html>

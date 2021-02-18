@@ -1,0 +1,274 @@
+@font-face {
+    font-family: "Merriweather";
+    src: url("MerriweatherSansRegular.woff");
+}
+
+@font-face {
+    font-family: "Fira";
+    src: url("FiraCode-Regular.woff");
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: #31343B;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Merriweather";
+    font-size: 50px;
+    position: absolute;
+    top: 100px;
+    margin: 20px;
+    opacity: 1;
+    color: gray;
+}
+
+#personal-info, #instruction, #languages {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#languages .fieldset {
+    width: 270px;
+    display: flex;
+    justify-content: center;
+}
+
+.fieldset {
+    margin: 10px;
+    color: #d4d4d4;
+    font-family: "Fira Code";
+    border-radius: 3px;
+    border: 2px solid #555461;
+    padding: 20px;
+}
+
+#first-name, #last-name, #instruction-textbox {
+    width: 250px;
+    height: 15px;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background: rgba(20, 22, 24, 0.502);
+    border-radius: 3px;
+    border: 0px;
+    transition: 0.5s ease;
+}
+
+#instruction-textbox {
+    width: 400px;
+    height: 293px;
+    text-align: justify;
+    resize: none;
+}
+
+#first-name:focus, #last-name:focus, #instruction-textbox:focus {
+    background: #1e2024;
+    outline: none;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+/* start of radio button style */
+.container-radio {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+
+.container-radio input { /* Hide the browser's default radio button */
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark-radio {  /* Create a custom radio button */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.container-radio:hover input ~ .checkmark-radio { /* On mouse-over, add a grey background color */
+    background-color: #ccc;
+}
+
+.container-radio input:checked ~ .checkmark-radio { /* When the radio button is checked, add a blue background */
+    background-color: #ebaec9;
+}
+
+.checkmark-radio:after { /* Create the indicator (the dot/circle - hidden when not checked) */
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-radio input:checked ~ .checkmark-radio:after { /* Show the indicator (dot/circle) when checked */
+    display: block;
+}
+
+.container-radio .checkmark-radio:after { /* Style the indicator (dot/circle) */
+    top: 5px;
+    left: 5px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+}
+/* end of radio button style */
+
+#age {
+    width: 80%;
+    height: 35px;
+    font-size: 16px;
+    color: white;
+    background: rgba(20, 22, 24, 0.5);
+    border-radius: 3px;
+    border: 0;
+    padding: 5px;
+}
+
+#age option {
+    background: rgb(20, 22, 24, 0.9) !important;
+}
+
+#age option:hover {
+    background: crimson !important;
+}
+
+#age:focus {
+    outline: none;
+}
+
+/* start of checkbox styles */
+.container {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+    user-select: none;
+}
+  
+  
+.container input { /* Hide the browser's default checkbox */
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark { /* Create a custom checkbox */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    border-radius: 3px;
+    background-color: #eee;
+}
+  
+.container:hover input ~ .checkmark { /* On mouse-over, add a grey background color */
+    background-color: #ccc;
+}
+  
+.container input:checked ~ .checkmark { /* When the checkbox is checked, add a blue background */
+    background-color: #ebaec9;
+}
+    
+.checkmark:after { /* Create the checkmark/indicator (hidden when not checked) */
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.container input:checked ~ .checkmark:after { /* Show the checkmark when checked */
+    display: block;
+}
+  
+.container .checkmark:after { /* Style the checkmark/indicator */
+    left: 6px;
+    top: 2px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+/* end of checkbox styles */
+
+#buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#buttons .button {
+    width: 150px;
+    height: 60px;
+    font-size: 30px;
+    font-family: "Fira Code";
+    color: #d4d4d4;
+    background: rgba(24, 20, 22, 0.5);
+    border-radius: 5px;
+    border: 0;
+    margin: 50px;
+    transition: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+#buttons .button:hover {
+    background: #555461;
+    transform: scale(1.01);
+    box-shadow: 0px 8px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+#buttons .button:active {
+    background: #323238;
+}
+
+#buttons .button:focus {
+    outline: none;
+}
+
+.back img {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 2%;
+    left: 1%;
+    color: white;
+    opacity: 0.5;
+}

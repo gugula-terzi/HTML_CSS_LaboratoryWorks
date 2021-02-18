@@ -2,21 +2,74 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="icon" href="clipboard.png">
         <link rel="stylesheet" href="style_1.css">
         <title>User Input Form</title>
     </head>
     
     <body>
+        <div class="back" onclick="window.open('index.html', '_target')"><img src="circle_arrow.png" alt="back"></div>
         <h1>User Input Form</h1>
-        <form>
-            <fieldset>
-              <legend>Personal Particular</legend>
-              <label for="fname">First name:</label><br>
-              <input type="text" id="fname" name="fname" value="John"><br>
-              <label for="lname">Last name:</label><br>
-              <input type="text" id="lname" name="lname" value="Doe"><br><br>
-              <input type="submit" value="Submit">
-            </fieldset>
+        <main>
+          <div class="info">
+            <div class="main-info">
+              <form id="personal-info" autocomplete="off">
+                <fieldset class="fieldset">
+                  <legend>Personal Particular</legend>
+                  <label for="fname">First name:</label><br>
+                  <input type="text" id="first-name"><br><br>
+                  <label for="lname">Last name:</label><br>
+                  <input type="password" id="last-name"><br><br>
+                  <label>Gender: </label>
+                  <label class="container-radio">Male
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark-radio"></span>
+                  </label>
+                  <label class="container-radio">Female
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark-radio"></span>
+                  </label>
+                  <br>
+                  <label for="age">Age: </label>
+                  <select id="age" name="age">
+                    <option value="1">< 1 year old</option>
+                    <option value="2">< 16 year old</option>
+                    <option value="3">> 18 year old</option>
+                    <option value="4">> 25 year old</option>
+                  </select><br>
+                </fieldset>
+              </form>
+              <form id="languages">
+                <fieldset class="fieldset">
+                  <legend>Languages</legend>
+                  <label class="container">Java
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">C/C++
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">C#
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </fieldset>
+              </form>
+            </div>
+            <div class="additional-info">
+              <form id="instruction">
+                <fieldset class="fieldset">
+                  <legend>Instruction</legend>
+                  <textarea id="instruction-textbox">Enter your instruction here...</textarea>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <form id="buttons">
+            <input class="button" type="button" value="Send">
+            <input class="button" type="reset" value="Clear">
           </form>
+        </main>
     </body>
 </html>
