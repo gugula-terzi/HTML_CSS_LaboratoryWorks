@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "Rubik";
+    src: url("../fonts/Rubik-Regular.woff");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background: url("../images/bg.jpg");
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#weather {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.friday,
+.saturday,
+.sunday,
+.monday,
+.tuesday,
+.wednesday {
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 80px;
+    background: rgba(60, 58, 201, 0.2);
+    backdrop-filter: blur(5px);
+    margin-bottom: 40px;
+    border: white 2px solid;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: Rubik;
+}
+
+.weather-type {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font: 10pt Rubik;
+    text-transform: uppercase;
+}
+
+.weather-type img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.temperature {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.temperature .max, 
+.min {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.temperature .max .value,
+.min .value,
+.wind-speed .value {
+    color: white;
+    font: 18pt Rubik;
+}
+
+.temperature .max .max-name, 
+.min .min-name, 
+.power,
+.wind-direction .direction,
+.humidity .discription {
+    text-transform: uppercase;
+    color: white;
+    font: 10pt Rubik;
+    margin-bottom: 5px;
+}
+
+.wind-speed,
+.wind-direction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temperature img {
+    width: 45px;
+}
+
+.wind-direction img {
+    width: 35px;
+}
+
+.humidity .value {
+    font: 18pt Rubik;
+    color: white;
+}
+
+.help {
+    color: white;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    position: absolute;
+    right: 100px;
+    font-family: 'Segoe UI';
+    font-size: bold;
+    font-size: 16pt;
+}
+
+.arrow {
+    width: 30px;
+    height: 50px;
+    margin-top: 6px;
+    margin-left: 10px;
+    opacity: 0.5;
+    animation: moving 0.5s ease-in-out infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
+}
+
+#next {
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.212);
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#next img {
+    opacity: 0.2;
+    width: 0px;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#next:hover {
+    width: 70px;
+    backdrop-filter: blur(3px);
+}
+
+#next:hover img {
+    width: 50px;
+}
+
+
+@keyframes moving {
+    0% {
+        transform: translateX(-15%);
+    }
+    100% {
+        transform: translateX(15%);
+    }
+}
