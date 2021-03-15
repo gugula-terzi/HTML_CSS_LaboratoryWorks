@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: rgb(37, 39, 46);
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(37, 39, 46);
+}
+
+#plan {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: Candara;
+    color: rgb(153, 153, 153);
+    text-shadow: 2px 2px 3px black;
+    transform: translate(-50%, -50%);
+}
+
+.table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 48%;
+    background: rgba(27, 30, 37);
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid rgb(13, 15, 20);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 200px 500px 200px;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(3, 3, 3, 0.411);
+}
+
+.header {
+    background:rgba(3, 3, 3, 0.411);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: Candara;
+    color: rgb(153, 153, 153);
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.lection {
+    display: flex;
+    flex-direction: column;
+    color: rgb(145, 145, 145);
+    font-weight: bold;
+    font-size: 1em;
+    font-family: Calibri;
+}
+
+:is(.lection-title, .title) {
+    font-weight: bold;
+    font-family: Candara;
+    font-size: 1.15em;
+    color: rgb(96, 111, 201);
+}
+
+.content {
+    margin-right: 10px;
+}
+
+.text {
+    color: rgb(233, 233, 233);
+    font-size: 1.1em;
+    font-family: Calibri;
+}
+
+.none {
+    font-size: 2em;
+    color: rgb(145, 145, 145);
+}
+
+.last {
+    border: none;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    width: 1.5em;
+    height: 5em;
+    transition: 300ms cubic-bezier(.18,.89,.32,1.28);
+    border: 2px solid rgb(255, 255, 255);
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    border-radius: 2px 15px 15px 2px;
+}
+
+.btn img {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: 300ms cubic-bezier(.18,.89,.32,1.28);
+    transform: rotateZ(-180deg);
+}
+
+.btn:hover {
+    width: 5em;
+}
+
+.btn:hover img {
+    width: 3em;
+    height: 3em;
+    opacity: 1;
+}

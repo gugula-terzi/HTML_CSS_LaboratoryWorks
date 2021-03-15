@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/online-learning.png">
+        <link rel="stylesheet" href="styles/style_2.css">
+        <title>Lab #9</title>
+    </head>
+    <body>
+        <div class="main">
+            <a class="btn left" href="page_1.html">
+                <img src="images/right.svg" alt="left">
+            </a>
+            <div class="job-offers">
+                <div class="header">
+                    <img src="images/logos/joblist.png" alt="job-list">
+                    <p>Вакансии</p>
+                </div>
+                <div class="company">
+                    <img src="images/logos/coleso_md.png" alt="coleso md">
+                    <p>Продавец сельхозтехники</p>
+                </div>
+                <div class="company">
+                    <img src="images/logos/linella.png" alt="kameleon">
+                    <p>Менеджер магазина</p>
+                </div>
+                <div class="company">
+                    <img src="images/logos/kameleon.png" alt="kameleon">
+                    <p>Менеджер-проектировщик</p>
+                </div>
+                <div class="company">
+                    <img src="images/logos/metro.png" alt="metro">
+                    <p>Продавец свежих продуктов</p>
+                </div>
+                <div class="company last">
+                    <img src="images/logos/grafit.png" alt="grafit">
+                    <p>Full-stack Web Developer</p>
+                </div>
+            </div>
+            <a class="btn right" href="page_3.html">
+                <img src="images/right.svg" alt="right">
+            </a>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("body").css("display", "none");
+        
+            $("body").fadeIn(1000);
+        
+            $("div.right").click(function(event){
+                event.preventDefault();
+                linkLocation = this.href;
+                
+                $("body").delay(5000).fadeOut(1000, redirectPage);
+            });
+
+            $("div.left").click(function(event){
+                event.preventDefault();
+                linkLocation = this.href;
+
+                $("body").delay(5000).fadeOut(1000, redirectPage);
+            });
+        
+            function redirectPage() {
+                window.location = linkLocation;
+            }
+        });
+    </script>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/online-learning.png">
+        <link rel="stylesheet" href="styles/style_3.css">
+        <title>Lab #9</title>
+    </head>
+    <body>
+        <main>
+            <a class="btn left" href="page_2.html">
+                <img src="images/right.svg" alt="left">
+            </a>
+            <p id="plan">План занятий</p>
+            <div class="table">
+                <div class="row header">
+                    <div>Занятие</div>
+                    <div>Заголовок</div>
+                    <div>Дата изучения</div>
+                </div>
+                <div class="row">
+                    <div class="lection">
+                        <span class="lection-title">Лекция 1</span>
+                        <span>37 минут</span>
+                    </div>
+                    <div class="content">
+                        <div class="title">Основы ТРИЗ</div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Necessitatibus, quis. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </div>
+                    </div>
+                    <div class="none">-</div>
+                </div>
+                <div class="row">
+                    <div class="lection">
+                        <span class="lection-title">Лекция 2</span>
+                        <span>1 час 14 минут</span>
+                    </div>
+                    <div class="content">
+                        <div class="title">Приёмы разрешения технических противоречий</div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, eos?
+                            Necessitatibus, quis. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </div>
+                    </div>
+                    <div class="none">-</div>
+                </div>
+                <div class="row">
+                    <div class="lection">
+                        <span class="lection-title">Лекция 3</span>
+                        <span>1 час 24 минуты</span>
+                    </div>
+                    <div class="content">
+                        <div class="title">Примеры решения задач</div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Necessitatibus, quis. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </div>
+                    </div>
+                    <div class="none">-</div>
+                </div>
+                <div class="row last">
+                    <div class="lection">
+                        <span class="lection-title">Лекция 4</span>
+                        <span>1 час 25 минут</span>
+                    </div>
+                    <div class="content">
+                        <div class="title">Повышение идеальности</div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Necessitatibus, quis. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </div>
+                    </div>
+                    <div class="none">-</div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("body").css("display", "none");
+        
+            $("body").fadeIn(1000);
+        
+            $("div.right").click(function(event){
+                event.preventDefault();
+                linkLocation = this.href;
+                
+                $("body").delay(5000).fadeOut(1000, redirectPage);
+            });
+
+            $("div.left").click(function(event){
+                event.preventDefault();
+                linkLocation = this.href;
+
+                $("body").delay(5000).fadeOut(1000, redirectPage);
+            });
+        
+            function redirectPage() {
+                window.location = linkLocation;
+            }
+        });
+    </script>
+</html>

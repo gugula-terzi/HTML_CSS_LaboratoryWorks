@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/online-learning.png">
+        <link rel="stylesheet" href="styles/style_1.css">
+        <title>Lab #9</title>
+    </head>
+    <body>
+        <main>
+            <div class="info-message">
+                <img id="lock" src="images/lock.svg" alt="lock">
+                <div class="text">
+                    <p class="text-1">Зафиксируйте отличную цену для своей предстоящей поездки</p>
+                    <p class="text-2">Укажите даты, чтобы увидеть эти цены - получите мгновенное подтверждение бронирования</p>
+                </div>
+                <img id="close-message" src="images/close-message.svg" alt="close-message">
+            </div>
+        </main>
+        <a class="right" href="page_2.html">
+            <img src="images/right.svg" alt="right">
+        </a>
+    </body>
+    <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("body").css("display", "none");
+        
+            $("body").fadeIn(1000);
+        
+            $("div.right").click(function(event){
+                event.preventDefault();
+                linkLocation = this.href;
+                
+                $("body").fadeOut(1000, redirectPage);
+            })
+        
+            function redirectPage() {
+                window.location = linkLocation;
+            }
+        });
+    </script>
+</html>
