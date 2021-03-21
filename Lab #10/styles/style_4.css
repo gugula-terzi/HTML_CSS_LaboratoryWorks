@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: rgb(53, 57, 82);
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 auto;
+    height: 4em;
+    background: rgb(38, 42, 61);
+    width: 100%;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+ul li {
+    list-style-type: none;
+    display: block;
+    float: left;
+    margin: 0 20px;
+    color: white;
+    font-family: Calibri;
+    font-size: 1.5em;
+    font-weight: bold;
+    position: relative;
+    transition: 250ms ease-in-out;
+    cursor: default;
+}
+
+li:hover {
+    color: rgb(148, 161, 219);
+}
+
+li::after {
+    content: '';
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    width: 100%;
+    background: white;
+    height: 2px;
+
+    transform: scale(0);
+    transform-origin: center;
+    transition: transform 250ms ease-in-out;
+}
+
+li:hover::after {
+    transform: scale(1);
+    transform-origin: left;
+}
+
+/* Navigation links */
+.navigation {
+    position: absolute;
+    bottom: 10em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.next {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    font-family: Calibri;
+    margin-left: 50px;
+}
+
+.previous {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    font-family: Calibri;
+}
+
+.next::before {
+    content: '[';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 0;
+    position: absolute;
+    right: 180px;
+}
+
+.previous::before {
+    content: '[';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 0;
+    position: absolute;
+    left: -20px;
+}
+
+.next:hover::before{
+    content: '[';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 1;
+    position: absolute;
+    right: 170px;
+}
+
+.previous:hover::before{
+    content: '[';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 1;
+    position: absolute;
+    left: -10px;
+}
+
+.next::after {
+    content: ']';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 0;
+    position: absolute;
+    right: -20px;
+}
+
+.previous::after {
+    content: ']';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 0;
+    position: absolute;
+    left: 190px;
+}
+
+.next:hover::after  {
+    content: ']';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 1;
+    position: absolute;
+    right: -10px;
+}
+
+.previous:hover::after  {
+    content: ']';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 1;
+    position: absolute;
+    left: 182px;
+}

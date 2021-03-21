@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    width: 35.8%;
+    counter-reset: paragraph;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.text {
+    font-size: 1.2em;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.text::before {
+    counter-increment: paragraph;
+    content: 'Абзац № ' counter(paragraph) ' ';
+}
+
+.navigation {
+    position: absolute;
+    bottom: 10em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.next {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    font-family: Calibri;
+    margin-left: 50px;
+}
+
+.previous {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    font-family: Calibri;
+}
+
+.next::before {
+    content: '[';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 0;
+    position: absolute;
+    right: 180px;
+}
+
+.previous::before {
+    content: '[';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 0;
+    position: absolute;
+    left: -20px;
+}
+
+.next:hover::before{
+    content: '[';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 1;
+    position: absolute;
+    right: 170px;
+}
+
+.previous:hover::before{
+    content: '[';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 1;
+    position: absolute;
+    left: -10px;
+}
+
+.next::after {
+    content: ']';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 0;
+    position: absolute;
+    right: -20px;
+}
+
+.previous::after {
+    content: ']';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 0;
+    position: absolute;
+    left: 190px;
+}
+
+.next:hover::after  {
+    content: ']';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 1;
+    position: absolute;
+    right: -10px;
+}
+
+.previous:hover::after  {
+    content: ']';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 1;
+    position: absolute;
+    left: 182px;
+}

@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Calibri;
+}
+
+.lessons {
+    display: flex;
+}
+
+.lesson {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    padding: 4.5em 6em;
+    text-align: center;
+    position: relative;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.second,
+.third {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fourth {
+    padding: 0;
+    padding-top: 2px;
+    display: flex;
+    align-items: flex-start;
+    border-right: 1px solid gray;
+}
+
+.group-second,
+.group-first,
+.math {
+    border-bottom: 2px solid rgb(241, 112, 112);
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 1.5em;
+}
+
+.math {
+    border-bottom: 2px solid rgb(86, 184, 73);
+}
+
+.group-first {
+    border: 0;
+}
+
+.classroom::before {
+    content: 'Grupa 2';
+    position: absolute; 
+    top: 0em;
+    left: 0.5em;
+}
+
+.classroom::after {
+    content: '210(8)';
+    position: absolute; 
+    top: 0em;
+    right: 0.5em;
+}
+
+.group-second::before {
+    content: 'Grupa 2';
+    position: absolute; 
+    top: 0em;
+    left: 0.5em;
+}
+
+.group-second::after {
+    content: '217';
+    position: absolute; 
+    top: 0em;
+    right: 0.5em;
+}
+
+.group-first::before {
+    content: 'Grupa 1';
+    position: absolute; 
+    top: 0em;
+    left: 0.5em;
+}
+
+.group-first::after {
+    content: '210(8)';
+    position: absolute; 
+    top: 0em;
+    right: 0.5em;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
+.first::before {
+    content: 'Perechea 1  (8:00 - 9:20) ';
+    background: rgba(72, 50, 170, 0.76);
+    width: 100%;
+    position: absolute;
+    top: -41px;
+    padding: 10px 0;
+    border: 1px solid black;
+}
+
+.second::before {
+    content: 'Perechea 2  (9:30 - 10:50)';
+    background: rgba(72, 50, 170, 0.76);
+    width: 100%;
+    position: absolute;
+    top: -41px;
+    padding: 10px 0;
+    border: 1px solid black;
+}
+
+.third::before {
+    content: 'Perechea 3  (11:20 - 12:40)';
+    background: rgba(72, 50, 170, 0.76);
+    width: 100%;
+    position: absolute;
+    top: -41px;
+    padding: 10px 0;
+    border: 1px solid black;
+}
+
+.fourth::before {
+    content: 'Perechea 4  (12:50 - 14:10)';
+    background: rgba(72, 50, 170, 0.76);
+    width: 100%;
+    position: absolute;
+    top: -41px;
+    padding: 10px 0;
+    border-left: 0;
+    border: 1px solid black;
+}
+
+/* Navigation links */
+.navigation {
+    position: absolute;
+    bottom: 10em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.next {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    font-family: Calibri;
+    margin-left: 50px;
+}
+
+.previous {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    font-family: Calibri;
+}
+
+.next::before {
+    content: '[';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 0;
+    position: absolute;
+    right: 180px;
+}
+
+.previous::before {
+    content: '[';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 0;
+    position: absolute;
+    left: -20px;
+}
+
+.next:hover::before{
+    content: '[';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 1;
+    position: absolute;
+    right: 170px;
+}
+
+.previous:hover::before{
+    content: '[';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 1;
+    position: absolute;
+    left: -10px;
+}
+
+.next::after {
+    content: ']';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 0;
+    position: absolute;
+    right: -20px;
+}
+
+.previous::after {
+    content: ']';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 0;
+    position: absolute;
+    left: 190px;
+}
+
+.next:hover::after  {
+    content: ']';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 1;
+    position: absolute;
+    right: -10px;
+}
+
+.previous:hover::after  {
+    content: ']';
+    transition: 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    opacity: 1;
+    position: absolute;
+    left: 182px;
+}
