@@ -65,7 +65,6 @@ header {
     align-content: center;
     flex-direction: column;
     background: url('../images/twenty_one_pilots.jpg');
-    background-size: cover;
 }
 
 header ul {

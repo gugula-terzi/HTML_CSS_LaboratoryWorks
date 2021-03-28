@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #1f2643;
+    font-family: Calibri;    
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    position: absolute;
+    min-height: 100vh;
+    padding: 30px 0;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    border-radius: 40px;
+    background: #1f2643;
+    box-shadow:  -41px 41px 82px #191e36,
+                 41px -41px 82px #252e50;
+}
+
+fieldset {
+    border: 0;
+    width: 400px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: white;
+    text-shadow: -41px 41px 82px #191e36,
+                 41px -41px 82px #252e50;
+    font-weight: bold;
+    color: #e0e5eb;
+    text-shadow:  -5px -5px 12px #4e5a97,
+                  5px 5px 12px #010205;
+}
+
+select,
+input,
+textarea {
+    outline: none;
+    border-radius: 50px;
+    background: #1f2643;
+    box-shadow: inset 14.71px 14.71px 79px #15192D, 
+                inset -14.71px -14.71px 79px #293359;
+    border: 0;
+    padding: 10px 15px;
+    width: 500px;
+    font-size: 1.05em;
+    color: white;
+    appearance: none;
+    position: relative;
+}
+
+textarea {
+    border-radius: 20px;
+    font-size: 1.2em;
+}
+
+select::after {
+    content: '';
+    background: url(./arrow_down.svg) no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+label {
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+#description {
+    max-width: 600px;
+    min-width: 250px;
+    min-height: 100px;
+    max-height: 400px;
+}
+
+.input-file {
+    width: 100px;
+    appearance: none;
+    background: #1f2643;
+    border-radius: 50px;
+    box-shadow: inset 14.71px 14.71px 79px #15192D, 
+                inset -14.71px -14.71px 79px #293359;
+}
+
+#phone:valid,
+#email:valid {
+    border: 0;
+}
+
+#release-year:invalid,
+#phone:invalid,
+#email:invalid {
+    border: 1px solid rgba(214, 57, 57, 0.747);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.buttons button {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #212948, #1c223c);
+    box-shadow:  3px 3px 5px #1a2039,
+                -3px -3px 5px #242c4d;
+    border: 0;
+    outline: none;
+    appearance: none;
+    font-size: 1.2em;
+    color: white;
+    padding: 15px;
+
+}
+
+.buttons #clear-button {
+    margin-left: 20px;
+}
+
+.buttons button:active {
+    border-radius: 50px;
+    background: #1f2643;
+    box-shadow: inset 3px 3px 5px #1d233a,
+                inset -3px -3px 5px #232c52;
+    color: rgba(255, 255, 255, 0.7);
+}

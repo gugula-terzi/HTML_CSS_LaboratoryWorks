@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="car.png">
+        <title>Car information</title>
+    </head>
+    <body>
+        <main>
+            <form class="form-horizontal">
+                <fieldset>
+
+                <!-- Form Name -->
+                <div class="title">Информация об автомобиле</div>
+                
+                <!-- Select Basic -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="car-brand">Марка</label>
+                  <div class="col-md-4">
+                    <select id="car-brand" name="car-brand" class="form-control">
+                      <option value="1">Audi</option>
+                      <option value="2">BMW</option>
+                      <option value="3">Mercedes</option>
+                      <option value="4">Toyota</option>
+                      <option value="5">Nissan</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <!-- Select Basic -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="car-model">Модель</label>
+                  <div class="col-md-4">
+                    <select id="car-model" name="car-model" class="form-control">
+                      <option value="1">A1</option>
+                      <option value="2">Q6</option>
+                      <option value="3">RS</option>
+                      <option value="4">X5</option>
+                      <option value="5">X3</option>
+                      <option value="6">X6</option>
+                      <option value="7">Quashqai</option>
+                      <option value="8">Juke</option>
+                      <option value="9">Micra</option>
+                      <option value="10">A Class</option>
+                      <option value="11">GLA</option>
+                      <option value="12">S Class</option>
+                      <option value="13">Corolla</option>
+                      <option value="14">Camry</option>
+                      <option value="15">RAV 4</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="release-year">Год</label>  
+                  <div class="col-md-4">
+                  <input id="release-year" name="release-year" type="text" placeholder="ex. 2021" class="form-control input-md" required pattern="[0-9]{4}">
+                    
+                  </div>
+                </div>
+                
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="price">Цена</label>  
+                  <div class="col-md-4">
+                  <input id="price" name="price" type="text" placeholder="ex. 20000" class="form -control input-md" required>
+                    
+                  </div>
+                </div>
+                
+                <!-- Select Basic -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="transimission-type">Коробка передач</label>
+                  <div class="col-md-4">
+                    <select id="transimission-type" name="transimission-type" class="form-control">
+                      <option value="1">АКПП</option>
+                      <option value="2">МКПП</option>
+                      <option value="3">РКПП</option>
+                      <option value="4">Вариатор</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <!-- Select Basic -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="fuel-type">Тип топлива</label>
+                  <div class="col-md-4">
+                    <select id="fuel-type" name="fuel-type" class="form-control">
+                      <option value="1">Бензин</option>
+                      <option value="2">Дизель</option>
+                      <option value="3">Газ</option>
+                      <option value="4">Гибрид</option>
+                      <option value="5">Электричество</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <!-- Select Basic -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="car-type">Тип кузова</label>
+                  <div class="col-md-4">
+                    <select id="car-type" name="car-type" class="form-control">
+                      <option value="1">Хэтчбэк</option>
+                      <option value="2">Кроссовер</option>
+                      <option value="3">Медан</option>
+                      <option value="4">Купе</option>
+                      <option value="5">Микровен</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="mileage">Пробег</label>  
+                  <div class="col-md-4">
+                  <input id="mileage" name="mileage" type="text" placeholder="ex. 10000" class="form-control input-md">
+                    
+                  </div>
+                </div>
+                
+                <!-- Select Basic -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="actuator">Привод</label>
+                  <div class="col-md-4">
+                    <select id="actuator" name="actuator" class="form-control">
+                      <option value="1">Передний</option>
+                      <option value="2">Задний</option>
+                      <option value="3">Полный</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <!-- Select Basic -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="place-count">Количество мест</label>
+                  <div class="col-md-4">
+                    <select id="place-count" name="place-count" class="form-control">
+                      <option value="1">2</option>
+                      <option value="2">4</option>
+                      <option value="3">6</option>
+                      <option value="4">7</option>
+                      <option value="5">8</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <!-- Select Basic -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="door-count">Количество дверей</label>
+                  <div class="col-md-4">
+                    <select id="door-count" name="door-count" class="form-control">
+                      <option value="1">5</option>
+                      <option value="2">4</option>
+                      <option value="3">3</option>
+                      <option value="4">2</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <!-- File Button --> 
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="load-photo">Загрузка фото</label>
+                  <div class="col-md-4">
+                    <input id="load-photo" name="load-photo" class="input-file" type="file">
+                  </div>
+                </div>
+                
+                <!-- Select Basic -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="comfort">Комфорт</label>
+                  <div class="col-md-4">
+                    <select id="comfort" name="comfort" class="form-control">
+                      <option value="1">Кондиционер</option>
+                      <option value="2">Климат-контроль</option>
+                      <option value="3">Усилитель руля</option>
+                      <option value="4">Регулируемая по высоте рулевая колонка</option>
+                      <option value="5">Электрорегулировка боковых зеркал</option>
+                      <option value="6">Электрорегулировка водительского сиденья</option>
+                      <option value="7">Подогрев передних сидений</option>
+                      <option value="8">Подогрев боковых зеркал</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <!-- Select Basic -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="safety">Безопасность</label>
+                  <div class="col-md-4">
+                    <select id="safety" name="safety" class="form-control">
+                      <option value="1">Шторки безопасности</option>
+                      <option value="2">Датчик парковки</option>
+                      <option value="3">Датчик дождя</option>
+                      <option value="4">Датчик света</option>
+                      <option value="5">Подушка безопасности водителя</option>
+                      <option value="6">Система стабилизации (ESP, DSC, VDC, ESC)</option>
+                      <option value="7">Подушка безопасности пассажира</option>
+                      <option value="8">Боковые подушки безопасности</option>
+                      <option value="9">Шторки безопасности</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <!-- Textarea -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="description">Описание</label>
+                  <div class="col-md-4">                     
+                    <textarea class="form-control" id="description" name="description">ex. Красная Toyota.</textarea>
+                  </div>
+                </div>
+                
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="phone-number">Контактный телефон</label>  
+                  <div class="col-md-4">
+                    <input type="tel" id="phone" name="phone" placeholder="+373(60)-234-146" required pattern="^\+\d{3}\(\d{2}\)\d{3}-\d{3}$">                    
+                  </div>
+                </div>
+                
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="email">Адрес электронной почты</label>  
+                  <div class="col-md-4">
+                  <input id="email" name="email" type="email" placeholder="ex. mail@mail.ru" class="form-control input-md" required pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">                    
+                  </div>
+                </div>
+                
+                <!-- Button (Double) -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="add-button"></label>
+                  <div class="buttons">
+                    <button id="add-button" name="add-button" class="btn btn-success" type="submit">Добавить</button>
+                    <button id="clear-button" name="clear-button" class="btn btn-danger" type="reset" value="Reset">Очистить</button>
+                  </div>
+                </div>
+                
+                </fieldset>
+            </form>                
+        </main>
+    </body>
+    
+    <script>
+        document.getElementById('price').onkeydown = function (e) {
+            return !(/^[А-Яа-яA-Za-z ]$/.test(e.key));
+        }
+        document.getElementById('release-year').onkeydown = function (e) {
+            return !(/^[А-Яа-яA-Za-z ]$/.test(e.key));
+        }
+        document.getElementById('mileage').onkeydown = function (e) {
+            return !(/^[А-Яа-яA-Za-z ]$/.test(e.key));
+        }
+    </script>
+</html>
