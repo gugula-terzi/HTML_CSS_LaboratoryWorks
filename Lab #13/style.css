@@ -1,0 +1,418 @@
+@font-face {
+    font-family: 'Night Forest';
+    src: url(./fonts/NightForest-eZnRg.woff);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 20px;
+    font-family: 'Night Forest';
+    font-size: 4em;
+    color: rgb(105, 62, 62);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu ul li {
+    margin-right: 50px;
+    opacity: 0.5;
+    transition: 1s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: default;
+}
+
+.menu ul li:last-child {
+    margin: 0;
+}
+
+.menu ul li:hover {
+    opacity: 1;
+    text-shadow:0px 6px 5px #000000;
+}
+
+.number {
+    font-size: 1.3em;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login {
+    margin-right: 20px;
+}
+
+.login button,
+.sign-up,
+.start {
+    border: 0;
+    background: transparent;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.3em;
+    transition: 1s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.login button:hover,
+.sign-up:hover,
+.start:hover {
+    background: rgba(73, 29, 29, 0.8);
+    color: white;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.main-bg-video {
+    position: relative;
+    width: 100%;
+    height: 950px;
+}
+
+#bgvid {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.how-it-works {
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    width: 500px;
+    z-index: 100;
+}
+
+.hiw-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.first {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.9);
+    text-align: justify;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.second {
+    margin-top: 50px;
+    display: flex;
+}
+
+.second p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.second p:nth-child(1) {
+    font-weight: bold;
+}
+
+.sign-up {
+    margin-top: 50px;
+    color: black
+}
+
+.transition-text {
+    position: absolute;
+    z-index: 100;
+    right: 150px;
+    top: 780px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background:rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 50px;
+    width: 625px;
+    height: 200px;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.transition-text p {
+    margin: 0;
+}
+
+.transition-text p:nth-child(2) {
+    margin-top: 20px;
+}
+
+.projects {
+    position: relative;
+    z-index: 10;
+    padding: 0 150px;
+    background: rgba(73, 29, 29, 0.8);
+    box-shadow: 0px -5px 10px 0px rgba(26, 16, 16, 0.6);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-title {
+    font-size: 1.5em;
+    width: 300px;
+    padding: 100px 0 20px 0;
+}
+
+.main-projects {    
+    font-weight: bold;
+}
+
+.cards {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 350px;
+}
+
+.info {
+    background: white;
+    padding: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    word-break: break-all;
+    margin: 20px 0 50px 0;
+}
+
+.image-box {
+    width: 100%;
+    height: 350px;
+}
+
+.pic1 {
+    background: url(./images/forest1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pic2 {
+    background: url(./images/forest2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pic3 {
+    background: url(./images/forest3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pic4 {
+    background: url(./images/forest4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.soon-projects {
+    display: flex;
+    margin: 0 0 30px 0;
+    padding: 30px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.soon-projects p {
+    font-weight: bold;
+}
+
+.two-projects ul {
+    display: flex;
+    padding: 0;
+    margin-left: 50px;
+}
+
+.two-projects ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 20px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.two-projects ul li::before {
+    content: '';
+    width: 60px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(80, 40, 40, 0.6);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.ready {
+    display: flex;
+    padding: 0 0 20px 0;
+    font-weight: bold;
+}
+
+.start {
+    margin-left: 20px;
+}
+
+@media (max-width: 1750px) {
+    .cards {        
+        flex-flow: row;
+    }
+
+    .card {
+        flex: 0 1 50%;
+        margin: 0 20px 0 0;
+    }
+}
+
+@media (max-width: 1600px) {
+    header {
+        flex-direction: column;
+    }
+    .menu,
+    .number {
+        margin: 10px;
+        text-align: center;
+    }
+    .how-it-works {
+        top: 300px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .transition-text {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }  
+    .projects {
+        padding-top: 50px;
+    }  
+}
+
+@media (max-width: 1200px) {
+    .cards {
+        gap: 1em;
+        flex-wrap: wrap;
+    }
+    .card {
+        margin: 0;
+        flex: 0 1 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu ul{
+        font-size: 1.2em;
+    }
+    .two-projects ul {
+        flex-direction: column;
+    }
+    .two-projects ul li:first-child {
+        margin: 0 0 10px 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .menu ul{
+        flex-direction: column;
+        font-size: 1.2em;
+    }
+    .menu ul li {
+        margin: 0;
+    }
+    .how-it-works {
+        top: 400px;
+        left: 80px;
+        font-size: 0.8em;
+    }
+    .how-it-works .first {
+        font-size: 1.8em;
+    }
+    .transition-text {
+        font-size: 1em;
+        width: 60%;
+        padding: 20px;
+        top: 850px;
+        height: 150px;
+    }
+    .soon-projects {
+        flex-direction: column;
+    }
+    .two-projects ul{
+        margin: 0;
+    }
+    .projects {
+        padding: 80px;
+    }
+}
+
+@media (max-width: 650px) {
+    .how-it-works .first {
+        text-align: unset;
+    }
+    .how-it-works {
+        width: 250px;
+    }
+    .circle {
+        height: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .transition-text {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 400px) {
+    .project-title {
+        font-size: 1.2em;
+    }
+}
+
