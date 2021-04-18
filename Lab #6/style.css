@@ -8,11 +8,6 @@
     src: url("Brasblus-26ee.woff");
 }
 
-@font-face {
-    font-family: "Lato";
-    src: url("Lato-Regular.woff");
-}
-
 html {
     overflow: hidden;
 }

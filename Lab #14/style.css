@@ -1,0 +1,540 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 200px;
+}
+
+#navbarNav {
+    font-weight: bold;
+}
+
+.view-portfolio {
+    background: rgb(95, 207, 128) !important;
+    border-radius: 50px !important;
+    font-weight: bold !important;
+    font-size: 0.95rem !important;
+    color: white !important;
+    font-family: Tahoma, Geneva, Verdana, sans-serif !important;
+    text-shadow: 0px 2px 1px rgb(11, 158, 11);
+    width: 200px;
+    height: 50px;
+    box-shadow: 0 2px 2px 0 rgb(11, 158, 11, 0.5);
+}
+
+.view-portfolio:focus {
+    box-shadow: 0 2px 2px 0 rgb(11, 158, 11, 0.5) !important;
+}
+
+.header-pic {
+    background: url(./images/header-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.hover-bg {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;  
+    height: 100%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.5rem;
+    margin: 0 20px;
+}
+
+.text {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 20px 0 40px 0;
+    font-family: 'Roboto Slab', serif !important;
+}
+
+.title-sec2 {
+    margin-top: 50px;
+    font-size: 2.5rem;
+}
+
+.text-sec2 {
+    margin: 0px 0 50px 0;
+    color: gray;   
+    font-family: 'Roboto Slab', serif !important;
+}
+
+.card {
+    border: 0 solid gray !important;
+}
+
+.card-title {
+    font-family: Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.card-text {
+    color: gray !important;
+    font-family: 'Roboto Slab', serif !important;
+}
+
+.prof-services {
+    margin: 0 0 50px 0;
+}
+
+.list-group {
+    margin: 0 0 40px 0 !important;
+}
+
+.list-group-item {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    color: white !important;
+    font-size: 1.2rem !important;
+    display: flex !important;
+    align-items: center;
+}
+
+.list-group-item i {
+    margin-right: 10px;
+}
+
+.title-sec3 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 2.7rem !important;
+}
+
+.text-sec3 {
+    font-size: 1.2rem !important;
+    margin: 20px 0;
+    width: 700px;
+}
+
+.learn-more {
+    height: 600px;
+    background: rgba(128, 128, 128, 0.2);
+    position: relative;
+}
+
+.gear {
+    position: absolute;
+    width: 450px;
+    top: 50%;
+    left: 24%;
+    transform: translate(0, -50%);
+}
+
+.section3 {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    background: url(./images/section-3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: 600px;
+    width: 65%;
+    padding: 50px;
+}
+
+.latest-project {
+    position: relative;
+    height: 700px;
+    padding: 50px 0 0 0;
+}
+
+.section4 {
+    margin: 0 0 0 15% !important;
+    width: 700px;
+}
+
+.title-latest-proj {
+    font-size: 2.5rem !important;
+}
+
+.title-sec4 {
+    margin: 0 !important;
+    font-size: 1.3rem !important;
+}
+
+.text-sec4 {
+    font-size: 1em !important;
+    margin: 10px 0;
+}
+
+
+.macbook {
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
+}
+
+.list-sec4 {
+    margin: 10px 0 !important;
+}
+
+.list-item-sec4 {
+    color: black !important;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.content-title {
+    font-size: 1rem;
+    color: #212529;
+    margin: 0;
+}
+
+.description {
+    font-size: 0.95rem;
+}
+
+.text-latest-proj {
+    margin: 0 0 80px 0;
+}
+
+.text-sec4,
+.text-latest-proj, 
+.description {
+    color: gray;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+.last-p {
+    margin: 0px 0 20px 0;
+}
+
+.list-item-sec4 img {
+    margin: 0 15px 10px 0 !important;
+}
+
+.details {
+    text-decoration: none;
+    color: rgb(95, 207, 128);
+    font-size: 1.2rem;
+}
+
+.culture-value {
+    margin: 80px 0 0 0 !important;
+}
+
+.reviews {
+    margin: 0 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews:first-child {
+    margin: 0 0 30px 0;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    margin: 0 0 30px 0;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(128, 128, 128, 0.2);
+}
+
+.rectangle {
+    background: rgba(128, 128, 128, 0.2);
+    width: 600px;
+    height: 180px;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.review-text {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 1.1rem;
+    color:rgba(128, 128, 128, 1)
+}
+
+.user {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 1.1rem;
+    color:rgb(103, 216, 88)
+}
+
+.review-text::after,
+.review-text::before {
+    content: "\"";
+    font-family: "Roboto Slab", sans-serif;
+    display: inline;
+}
+
+.ready {
+    background: rgb(95, 207, 128);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-sec6 {
+    color: white;
+}
+
+.contact-us {
+    border: 3px solid white !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.footer {
+    background: #272727;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0 5px 0;
+}
+
+.contact {
+    width: 200px;
+}
+
+.latest-tweets {
+    width: 300px;
+}
+
+.footer-title {
+    font-family: Tahoma, sans-serif;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.list-group-item {
+    margin: 5px 0 !important;
+    align-items: flex-start !important;
+}
+
+@media (max-width: 1800px) {
+    .macbook {
+        width: 700px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .section3 {
+        width: 100%;
+    }
+    .gear {
+        width: 0;
+    }
+    .macbook {
+        width: 500px;
+    }
+    .section4 {
+        margin: 0 0 0 5% !important;
+    }
+    .text-sec4 {
+        font-size: 0.9rem !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .text-sec4,
+    .description,
+    .content-title {
+        font-size: 0.85rem !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .section4 {
+        width: 500px;
+    }
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+    .rectangle {
+        width: 550px;
+        height: 130px;
+    }
+    .review-text {
+        font-size: 1rem;
+    }    
+    .user {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .text-sec3 {
+        font-size: 1rem !important;
+        width: 75%;
+    }
+    .list-group-item {
+        font-size: 1rem !important;
+    }
+    .title-sec3 {
+        font-size: 2rem !important;
+    }
+    .section3 {
+        height: 650px;
+    }
+    .title {
+        font-size: 2rem !important;
+    }
+    .section4 {
+        margin: 0 auto !important;
+    }
+    .macbook {
+        width: 0;
+    }
+    .content-title {
+        font-size: 0.85rem !important;
+    }
+    .title-latest-proj {
+        margin: 20px 0 0 0;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+    .rectangle {
+        width: 500px;
+        height: 80px;
+    }
+    .review-text {
+        font-size: 0.8rem;
+    }    
+    .user {
+        font-size: 0.8rem;
+    }
+    .rectangle {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 650px) {
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+    .rectangle {
+        width: 450px;
+        height: 100px;
+    }
+    .review-text {
+        font-size: 0.8rem;
+    }    
+    .user {
+        font-size: 0.8rem;
+    }
+    .rectangle {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .circle {
+        width: 80px;
+        height: 80px;
+    }
+    .rectangle {
+        width: 350px;
+        height: 120px;
+    }
+    .review-text {
+        font-size: 0.8rem;
+    }    
+    .user {
+        font-size: 0.8rem;
+    }
+    .rectangle {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 550px) {
+    .section4 {
+        width: 300px;
+    }
+    .text-latest-proj {
+        margin: 0 0 20px 0;
+    }
+    .circle {
+        width: 80px;
+        height: 80px;
+    }
+    .rectangle {
+        width: 300px;
+        height: 130px;
+    }
+    .review-text {
+        font-size: 0.7rem;
+    }    
+    .user {
+        font-size: 0.7rem;
+    }
+    .rectangle {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .text-sec3 {
+        font-size: 0.9rem !important;
+    }
+    .title-sec3 {
+        font-size: 1.8rem !important;
+    }
+
+    .circle {
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+    .rectangle {
+        width: 300px;
+        height: 200px;
+    }
+    .review-text {
+        font-size: 0.8rem;
+    }    
+    .user {
+        font-size: 0.8rem;
+    }
+    .rectangle {
+        padding: 50px;
+    }
+
+    
+}
